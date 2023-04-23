@@ -1,18 +1,12 @@
 #include <stdio.h>
 /** 
- * A simple program that prints a string
+ * main - prints a string 
  */
 int main(void)
-{/**
-*Character declaration
-*/
-char str[] = "\"Programming is like building a multilingual puzzle";
+{
+	puts("\"Programming is like building a multilingual puzzle");
 /**
- * output
- */ 
-puts(str);
-/**
- * End function
- */ 
-return (0);
+ * Return: 0 if the program is a success
+ */
+	return (0);	
 }
