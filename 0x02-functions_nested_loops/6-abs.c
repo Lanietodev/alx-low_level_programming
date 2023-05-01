@@ -3,23 +3,16 @@
 *_abs - checks for absolute values
 *
 *@n: character to be checked
-*Return: 0(success)
+*Return: n(success)
 */
 int _abs(int n)
 {
 if (n < 0)
 {
 n = n * -1;
-_putchar(n);
-}
-else if (n == 0)
-{
-n = '0';
-_putchar(n);
+return (n);
 }
 else
 {
-_putchar(n);
-}
-return (0);
+return (n);
 }
