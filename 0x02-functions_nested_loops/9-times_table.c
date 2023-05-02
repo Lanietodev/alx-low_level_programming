@@ -6,9 +6,11 @@
 */
 void times_table(void)
 {
-for (int j = 0; j <= 9; j++)
+int j, i;
+
+for (j = 0; j <= 9; j++)
 {
-for (int i = 0; i <= 9; i++)
+for (i = 0; i <= 9; i++)
 {
 int  multiply = i * j;
 
