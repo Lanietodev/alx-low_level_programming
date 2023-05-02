@@ -2,21 +2,33 @@
 /**
  * times_table - entry point
  *
- * Return: time (success)
+ * Return: 0 (success)
 */
 void times_table(void)
 {
-int i, j;
+for (int j = 0; j <= 9; j++)
+{
+for (int i = 0; i <= 9; i++)
+{
+int  multiply = i * j;
 
-for (j = 0; j <= 9; j++)
+if (i == 0)
 {
-for (i = 0; i <= 9; i++)
-{
-_putchar('0' + i*j);
-if (i < 9)
+_putchar('0');
+}
+else if (multiply > 9)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(multiply / 10 + '0');
+_putchar(multiply % 10 + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(multiply + '0');
 }
 }
 _putchar('\n');
