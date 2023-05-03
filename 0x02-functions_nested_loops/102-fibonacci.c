@@ -6,15 +6,15 @@
 */
 int main(void)
 {
-long long first = 1, second = 2, next;
+long first = 1, second = 2, next;
 
 int n;
 
-printf("%d, %d", first, second);
+printf("%ld, %ld", first, second);
 for (n = 3; n <= 50; n++)
 {
 next = first + second;
-printf(", %lld", next);
+printf(", %ld", next);
 first = second;
 second = next;
 }
