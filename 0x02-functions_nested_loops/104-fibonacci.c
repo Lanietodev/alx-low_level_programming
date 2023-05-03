@@ -6,14 +6,14 @@
 */
 int main(void)
 {
-long first = 1, second = 2, next;
+unsigned long first = 1, second = 2, next;
 int n;
 
-printf("%ld, %ld", first, second);
+printf("%lu, %lu", first, second);
 for (n = 0; n <= 98; n++)
 {
 next = first + second;
-printf(", %ld", next);
+printf(", %lu", next);
 first = second;
 second = next;
 }
