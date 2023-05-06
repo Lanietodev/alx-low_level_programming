@@ -7,9 +7,6 @@
 */
 int mul(int a, int b)
 {
-	int multiply;
-
-	multiply = a * b;
-	_putchar(multiply + '0');
+	_putchar(a * b + '0');
 	return (0);
 }
