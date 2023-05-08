@@ -14,17 +14,17 @@ for (j = 0; j < n; j++)
 {
 if (n <= 0)
 {
-putchar('\n');
+_putchar('\n');
 }
 else if (i == j)
 {
-putchar('\\');
+_putchar('\\');
 }
 else
 {
-putchar(' ');
+_putchar(' ');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }
