@@ -16,7 +16,7 @@ _putchar('\n');
 }
 else
 {
-_putchar('-');
+_putchar('_');
 }
 }
 _putchar('\n');
