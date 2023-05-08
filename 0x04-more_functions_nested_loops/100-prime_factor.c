@@ -1,33 +1,35 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - entry point
  *
  * Return: 0 (success)
 */
+
 int main(void)
 {
-long int n, i, j, isPrime, lastFactor;
-n = 612852475143;
+long n = 612852475143;
+long largest_prime_factor = 1;
 
-for (i = 2; i <= n; i++)
+while (n % 2 == 0) 
 {
-isPrime = 1;
-for (j = 2; j <= i / 2; j++)
-{
-if (i % j == 0)
-{
-isPrime = 0;
-break;
+largest_prime_factor = 2;
+n /= 2;
 }
-}
-if (isPrime == 1 && n % i == 0)
+for (long i = 3; i <= sqrt(n); i += 2) 
 {
-lastFactor = i;
+while (n % i == 0) 
+{
+largest_prime_factor = i;
 n /= i;
-i = 1;
 }
 }
-printf("%ld", lastFactor);
+if (n > 2) 
+{
+largest_prime_factor = n;
+}
+printf("%ld\n", largest_prime_factor);
 return (0);
+}
 }
