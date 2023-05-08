@@ -27,17 +27,8 @@ printf(" ");
 }
 else
 {
-if (n > 9)
-{
-printf("%d", n / 10);
-printf("%d", n % 10);
-printf(" ");
-}
-else
-{
 printf("%d", n);
 printf(" ");
-}
 }
 }
 }
