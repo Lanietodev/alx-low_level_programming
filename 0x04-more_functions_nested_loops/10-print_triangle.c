@@ -6,19 +6,21 @@
 */
 void print_triangle(int size)
 {
+	int i, j, k;
+
 if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (int i = 1; i <= size; i++)
+for (i = 1; i <= size; i++)
 {
-for (int j = 0; j <= size - i; j++)
+for (j = 0; j <= size - i; j++)
 {
 _putchar(' '); 
 }
-for (int k = 1; k <= 2 * i - i; k++)
+for (k = 1; k <= 2 * i - i; k++)
 {
 _putchar('#');
 }
