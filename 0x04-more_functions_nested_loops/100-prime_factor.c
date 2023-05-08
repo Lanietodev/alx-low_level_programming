@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-int n, i, j, isPrime, lastFactor;
+long int n, i, j, isPrime, lastFactor;
 n = 612852475143;
 
 for (i = 2; i <= n; i++)
@@ -28,6 +28,6 @@ n /= i;
 i = 1;
 }
 }
-printf("%d", lastFactor);
+printf("%ld", lastFactor);
 return (0);
 }
