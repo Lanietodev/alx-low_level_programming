@@ -20,7 +20,7 @@ else if (i == j)
 {
 _putchar('\\');
 }
-else
+else if (j < i)
 {
 _putchar(' ');
 }
