@@ -33,4 +33,3 @@ largest_prime_factor = n;
 printf("%ld\n", largest_prime_factor);
 return (0);
 }
-}
