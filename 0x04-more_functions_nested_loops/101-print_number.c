@@ -12,7 +12,7 @@ if (n < 0)
 _putchar('-');
 if (n == INT_MIN)
 {
-putchar('2');
+_putchar('2');
 n = -(n + 2000000000);
 }
 else
