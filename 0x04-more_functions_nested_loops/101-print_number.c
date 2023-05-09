@@ -1,4 +1,3 @@
-#include <linits.h>
 #include "main.h"
 /**
 * print_number - Write a function that prints an integer.
@@ -11,15 +10,7 @@ int divisor = 1;
 if (n < 0)
 {
 _putchar('-');
-if (n == INT_MIN)
-{
-_putchar('2');
-n = -(n + 2000000000);
-}
-else
-{
 n = -n;
-}
 }
 while (n / divisor >= 10)
 {
