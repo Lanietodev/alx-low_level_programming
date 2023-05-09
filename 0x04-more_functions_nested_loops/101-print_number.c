@@ -1,30 +1,26 @@
 #include "main.h"
 /**
-* main - entry point
-* @n: parameter to check
+* print_number - Write a function that prints an integer.
+* @n parameter to check
 * Return: 0 (success)
 */
 void print_number(int n)
 {
-	int i, j, temp;
-
+int divisor = 1;
 if (n < 0)
 {
 _putchar('-');
 n = -n;
 }
-int digitCount = 0;
-for (temp = n; temp > 0; temp /= 10)
-{
-digitCount++;
-}
-for (i = digitCount - 1; i >= 0; i--)
-{
-int divisor = 1;
-for (j = 0; j < i; j++)
+while (n / divisor >= 10)
 {
 divisor *= 10;
 }
-_putchar(n / divisor % 10 + '0');
+while (divisor > 0)
+{
+int digit = n / divisor;
+_putchar(digit + '0');
+n -= digit * divisor;
+divisor /= 10;
 }
 }
