@@ -3,7 +3,7 @@
 
 /**
  * _strncat - concatenates two strings
- *
+ * @n: n bytes from src
  * @dest ptr: destination string
  * @src ptr: source string
  * Return: Always 0 (Success)
