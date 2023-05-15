@@ -18,6 +18,10 @@ i++;
 str[i] = '\0';
 for (j = 0; j < i; j++)
 {
+if (str[0] >= 97 && str[0] <= 122)
+{
+str[0] -= 32;
+};
 switch (str[j])
 {
 case 32:
