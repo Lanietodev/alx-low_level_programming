@@ -11,8 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int i, mul;
+
 	i = 0;
-	
 	for (i = 1; i < argc; i++)
 	{
 		mul = atoi(argv[1]) * atoi(argv[2]);
