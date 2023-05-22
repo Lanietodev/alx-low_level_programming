@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - entry point
  * @argc: argument count
  * @argv ptr: argument vector
