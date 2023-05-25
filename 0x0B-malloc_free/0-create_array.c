@@ -15,7 +15,7 @@ unsigned int i;
 char *array = (char *) malloc(size * sizeof(char));
 if (array == NULL)
 {
-return (1);
+exit (0);
 }
 if (size == 0)
 {
