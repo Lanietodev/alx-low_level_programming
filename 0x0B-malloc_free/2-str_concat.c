@@ -13,7 +13,6 @@ int i, j, k, l;
 char *scat;
 i = 0;
 j = 0;
-k = 0;
 l = 0;
 
 
@@ -36,7 +35,7 @@ while (s2[j] != '\0')
 j++;
 }
 i = j;
-scat = (char *) malloc ((i + j + 1) * sizeof(char));
+scat = (char *) malloc ((i + j) * sizeof(char));
 if (scat == NULL)
 {
 exit(0);
