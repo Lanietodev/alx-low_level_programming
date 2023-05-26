@@ -19,8 +19,14 @@ return (NULL);
 }
 if (s1 == NULL || s2 == NULL)
 {
+if (s1 == NULL)
+{
 s1 = "";
+}
+if (s2 == NULL)
+{
 s2 = "";
+}
 }
 while (s1[i] != '\0')
 {
@@ -32,7 +38,7 @@ while (s2[j] != '\0')
 j++;
 }
 l = j;
-scat = (char *)malloc((i + j)*sizeof(char));
+scat = (char *)malloc((i + j + 1)*sizeof(char));
 if (scat == NULL)
 {
 exit(0);
