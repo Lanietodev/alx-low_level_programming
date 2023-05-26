@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * str_concat - entry point
@@ -30,7 +30,7 @@ i++;
 k = i;
 while (s2[j] != '\0')
 {
-J++;
+j++;
 }
 i = j;
 scat = (char *) malloc ((i + j + 1) * sizeof(char));
