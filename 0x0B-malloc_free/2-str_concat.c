@@ -15,10 +15,9 @@ i = j = l = 0;
 
 if (s1 == NULL && s2 == NULL)
 {
-return (NULL);
+s1 = "";
+s2 = "";
 }
-if (s1 == NULL || s2 == NULL)
-{
 if (s1 == NULL)
 {
 s1 = "";
@@ -26,7 +25,6 @@ s1 = "";
 if (s2 == NULL)
 {
 s2 = "";
-}
 }
 while (s1[i] != '\0')
 {
