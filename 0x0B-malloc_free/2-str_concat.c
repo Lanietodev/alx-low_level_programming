@@ -22,12 +22,15 @@ if (s1 == NULL || s2 == NULL)
 s1 = "";
 s2 = "";
 }
-while (s1[i] != '\0' && s2[j] != '\0')
+while (s1[i] != '\0')
 {
 i++;
-j++;
 }
 k = i;
+while (s2[j] != '\0')
+{
+j++;
+}
 l = j;
 scat = (char *)malloc((i + j)*sizeof(char));
 if (scat == NULL)
