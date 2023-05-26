@@ -13,6 +13,8 @@ int i, j, k, l;
 char *scat;
 i = 0;
 j = 0;
+k = 0;
+l = 0;
 
 
 if (s1 == NULL && s2 == NULL)
