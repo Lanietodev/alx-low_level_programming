@@ -10,9 +10,10 @@
 char *str_concat(char *s1, char *s2)
 {
 int i, j, k, l;
+char *scat;
 i = 0;
 j = 0;
-char *scat;
+
 
 if (s1 == NULL && s2 == NULL)
 {
@@ -47,5 +48,5 @@ for (j = 0; j < l; j++)
 scat[i + j] = s2[j];
 }
 scat[i + j] = '\0';
-return (scat)
+return (scat);
 }
