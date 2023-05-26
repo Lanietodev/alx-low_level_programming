@@ -29,10 +29,5 @@ for (j = 0; j < i; j++)
 {
 dup[j] = str[j];
 }
-for (j = 0; j < i; j++)
-{
-return (dup);
-}
-free(dup);
 return (dup);
 }
