@@ -35,7 +35,7 @@ exit(0);
 for (h = 0; h < height; h++)
 {
 grid[h] = (int *)malloc(width * sizeof(int));
-if (grid[h][w] == NULL)
+if (grid[h] == NULL)
 {
 exit(0);
 }
