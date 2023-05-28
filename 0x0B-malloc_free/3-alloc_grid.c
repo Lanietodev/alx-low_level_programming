@@ -28,16 +28,16 @@ if (w == 0 || h == 0 || w < 0 || h < 0)
 return (NULL);
 }
 grid = (int **)malloc(height * sizeof(int *));
-if (grid[h] == NULL)
+if (grid == NULL)
 {
-exit(0);
+exit(1);
 }
 for (h = 0; h < height; h++)
 {
 grid[h] = (int *)malloc(width * sizeof(int));
-if (grid[h][w] == NULL)
+if (grid[h] == NULL)
 {
-exit(0);
+exit(1);
 }
 }
 for (h = 0; h < height; h++)
