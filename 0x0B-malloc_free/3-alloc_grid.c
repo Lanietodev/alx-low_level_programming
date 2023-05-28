@@ -47,6 +47,10 @@ for (w = 0; w < width; w++)
 grid[h][w] = 0;
 }
 }
-free(grid);
+if (*grid != NULL)
+{
+	free(*grid);
+	*grid = NULL;
+}
 return (grid);
 }
