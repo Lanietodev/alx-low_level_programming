@@ -30,14 +30,14 @@ return (NULL);
 grid = (int **)malloc(height * sizeof(int *));
 if (grid == NULL)
 {
-exit(1);
+exit(0);
 }
 for (h = 0; h < height; h++)
 {
 grid[h] = (int *)malloc(width * sizeof(int));
 if (grid[h] == NULL)
 {
-exit(1);
+exit(0);
 }
 }
 for (h = 0; h < height; h++)
@@ -47,10 +47,6 @@ for (w = 0; w < width; w++)
 grid[h][w] = 0;
 }
 }
-if (*grid != NULL)
-{
-	free(*grid);
-	*grid = NULL;
-}
+
 return (grid);
 }
