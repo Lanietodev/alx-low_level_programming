@@ -47,6 +47,6 @@ for (w = 0; w < width; w++)
 grid[h][w] = 0;
 }
 }
-cleanup(&grid);
+free(grid);
 return (grid);
 }
