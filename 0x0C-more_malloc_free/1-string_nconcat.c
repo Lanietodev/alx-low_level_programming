@@ -18,6 +18,8 @@ char *ptr;
 
 i = 0;
 j = 0;
+if (s1 == NULL && s2 == NULL)
+return (NULL);
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
