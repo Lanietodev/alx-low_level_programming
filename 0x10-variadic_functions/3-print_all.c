@@ -18,8 +18,6 @@ void print_all(const char * const format, ...)
 va_list arg;
 unsigned int i = 0;
 char *str;
-int num;
-float fnum;
 
 va_start(arg, format);
 while (format && format[i])
