@@ -28,6 +28,7 @@ if (new_dog->name == NULL)
 {
 free(new_dog);
 return (NULL);
+}
 for (k = 0; k <= i; k++)
 {
 new_dog->name[k] = name[k];
