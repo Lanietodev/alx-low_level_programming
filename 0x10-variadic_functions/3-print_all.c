@@ -41,7 +41,8 @@ printf("%s", str);
 break;
 default:
 i++;
-continue;}
+continue;
+}
 
 if (format[i + 1] != '\0')
 printf(", ");
