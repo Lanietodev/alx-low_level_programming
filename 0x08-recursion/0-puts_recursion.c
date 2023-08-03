@@ -1,5 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * _puts_recursion - Entry point
+ * @s ptr: input
+ * Return: Always 0 (Success)
+ */
 
 void _puts_recursion(char *s)
 {
