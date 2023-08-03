@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * factorial - Entry point
- * n: input
+ * @n: input
  * Return: Always 0 (Success)
  */
 int factorial(int n)
