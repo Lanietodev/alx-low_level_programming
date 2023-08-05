@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * @argc: argument count
- * @argv: argument vector
+ * @argv ptr : argument vector
  * Return: Always 0
  */
 int main(int argc, char *argv[])
