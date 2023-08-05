@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * @argc: argument count
- * @argv ptr : argument vector
+ * @argv ptr: argument vector
  * Return: Always 0
  */
+
 int main(int argc, char *argv[])
 {
 if(argc >= 1)
