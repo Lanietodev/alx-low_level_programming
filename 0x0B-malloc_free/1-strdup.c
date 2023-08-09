@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-*create_array - Entry point
+*_strdup - Entry point
 *@str: pointer to string
 *Return: pointer to string
 */
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	{
 		j++;
 	}
-	ptr = malloc (sizeof(char) * (j + 1));
+	ptr = malloc(sizeof(char) * (j + 1));
 
 	if (ptr == NULL)
 	{
