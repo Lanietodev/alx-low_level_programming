@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - Entry point
- * @b: Size to check
- * Return: Pointer to allocated memory
+* malloc_checked - Entry point
+* @b: Size to check
+* Return: Pointer to allocated memory
 */
 
 void *malloc_checked(unsigned int b)
