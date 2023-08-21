@@ -41,7 +41,8 @@ int _strlen(char *s)
 /**
  * errors - handles errors for main
  */
-void errors(void) {
+void errors(void)
+{
 	printf("Error\n");
 	exit(98);
 }
@@ -80,8 +81,9 @@ int main(int argc, char *argv[])
 		result[len1 + len2 + 1] = carry % 10;
 		carry /= 10;
 	}
-		if (carry > 0) result[len1 + len2 + 1]
-			+= carry;
+		if (carry > 0)
+			result[len1 + len2 + 1]
+		+= carry;
 	}
 	for (i = 0; i < len - 1; i++)
 	{
